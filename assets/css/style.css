@@ -8,7 +8,10 @@ a{
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+ /* NAVBAR SECTION */
 header{
     display: flex;
     justify-content: space-between;
@@ -33,6 +36,68 @@ header a{
     }
     .fa-bars{
         display: flex;
+        cursor: pointer;
         font-size: 2rem;
+    }
+}
+    /* INTRODUCTION SECTION */
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+    flex-wrap: wrap;
+}
+.intro-left-side{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-top: 7.31rem;
+    min-width: 715px;
+}
+.intro-right-side{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4.38rem;
+    min-width: 500px;
+}
+.intro-left-side > h1{
+    font-size: 4.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.intro-left-side > h1 >span {
+    color: #FF8A56;
+}
+.intro-left-side p {
+    font-size: 1.38rem;
+    font-weight: 400;
+    color: #666;
+}
+@media (max-width: 1473px) and (min-width:768px) {
+    .intro-left-side{
+        align-items: center;
+        flex-basis: 100%;
+    }
+    .introduction{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .intro-right-side{
+        justify-content: center;
+    }
+}
+@media (max-width:768px) {
+    .introduction{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .intro-left-side{
+        min-width: 400px;
+        text-align: center;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
